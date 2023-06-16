@@ -1,11 +1,15 @@
 .container {
   border: 1px solid #ccc;
   padding: 0 20px 20px 20px;
+  color: #2525eb;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .field {
   border: 1px solid #ccc;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .btn {
