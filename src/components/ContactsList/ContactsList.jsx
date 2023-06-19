@@ -7,13 +7,9 @@ import {
 
 import css from './ContactsList.module.css';
 import { getFilter } from '../../redux/filter/filterSelector';
-import { getContacts } from 'redux/service';
 
 const ContactsList = () => {
-  const { items } = useSelector(getContacts);
-  const { isLoading } = useSelector(state => state.contacts.isLoading);
-  const { error } = useSelector(state => state.contacts.error);
-
+  const { items, error, isLoading } = useSelector(state => state.contacts);
   const filterState = useSelector(getFilter);
 
   const dispatch = useDispatch();
